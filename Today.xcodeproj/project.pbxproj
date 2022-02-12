@@ -17,6 +17,7 @@
 		DF56CDAA27B7991C00066242 /* TodayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56CDA927B7991C00066242 /* TodayUITests.swift */; };
 		DF56CDAC27B7991C00066242 /* TodayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56CDAB27B7991C00066242 /* TodayUITestsLaunchTests.swift */; };
 		DF56CDB927B79BC300066242 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56CDB827B79BC300066242 /* Reminder.swift */; };
+		DF56CDBB27B79CF400066242 /* ReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56CDBA27B79CF400066242 /* ReminderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DF56CDA927B7991C00066242 /* TodayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayUITests.swift; sourceTree = "<group>"; };
 		DF56CDAB27B7991C00066242 /* TodayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DF56CDB827B79BC300066242 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		DF56CDBA27B79CF400066242 /* ReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				DF56CD9F27B7991C00066242 /* TodayTests.swift */,
+				DF56CDBA27B79CF400066242 /* ReminderTests.swift */,
 			);
 			path = TodayTests;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF56CDA027B7991C00066242 /* TodayTests.swift in Sources */,
+				DF56CDBB27B79CF400066242 /* ReminderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
