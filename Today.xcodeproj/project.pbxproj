@@ -108,7 +108,7 @@
 				DF56CD9127B7991C00066242 /* Assets.xcassets */,
 				DF56CD9627B7991C00066242 /* Info.plist */,
 				DF56CDBC27B7A42A00066242 /* Models */,
-				DF56CDBD27B7A46900066242 /* Views */,
+				DF56CDBD27B7A46900066242 /* Storyboards */,
 				DF56CDBE27B7A4A400066242 /* Controllers */,
 			);
 			path = Today;
@@ -140,13 +140,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		DF56CDBD27B7A46900066242 /* Views */ = {
+		DF56CDBD27B7A46900066242 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				DF56CD8E27B7991B00066242 /* Main.storyboard */,
 				DF56CD9327B7991C00066242 /* LaunchScreen.storyboard */,
 			);
-			path = Views;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		DF56CDBE27B7A4A400066242 /* Controllers */ = {
