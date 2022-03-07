@@ -13,6 +13,8 @@ import XCTest
 
 // swiftlint:disable type_name
 final class Date_TodayTestCase: XCTestCase {
+    let seconds: TimeInterval = 2000
+
     // MARK: - test property dayAndTime
 
     func testDayAndTimeTextToday() {
@@ -27,7 +29,6 @@ final class Date_TodayTestCase: XCTestCase {
     }
 
     func testDayAndTimeTextNotToday() {
-        let seconds: TimeInterval = 2000
         let dateText = Date(timeIntervalSince1970: seconds)
             .formatted(.dateTime.month(.abbreviated).day())
         let timeText = Date(timeIntervalSince1970: seconds)
@@ -44,4 +45,17 @@ final class Date_TodayTestCase: XCTestCase {
     }
 
     // MARK: - test property dayAndTime
+
+    func testDayText() {
+        XCTAssertEqual(
+            "Today",
+            Date().dayText)
+    }
+
+    func testDayTextNotToday() {
+        XCTAssertEqual(
+            Date(timeIntervalSince1970: seconds)
+                .formatted(.dateTime.month().day().weekday(.wide)),
+            Date(timeIntervalSince1970: seconds).dayText)
+    }
 }
