@@ -18,8 +18,10 @@ struct Reminder {
 
 // MARK: - Sample Data
 
+#if DEBUG
+
 extension Reminder {
-    static var testData = [
+    static var sampleData = [
         Reminder(
             title: "Submit reimbursement report",
             dueDate: Date().addingTimeInterval(800.0),
@@ -60,3 +62,5 @@ extension Reminder {
             notes: "v0.9 out on Friday")
     ]
 }
+
+#endif
