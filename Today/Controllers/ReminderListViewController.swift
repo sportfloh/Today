@@ -10,9 +10,6 @@ import UIKit
 // MARK: -
 
 class ReminderListViewController: UICollectionViewController {
-    typealias DataSource = UICollectionViewDiffableDataSource<Int, String>
-    typealias Snapshot = NSDiffableDataSourceSnapshot<Int, String>
-
     var dataSource: DataSource!
 
     override func viewDidLoad() {
@@ -21,13 +18,7 @@ class ReminderListViewController: UICollectionViewController {
         let listLayout = listLayout()
         collectionView.collectionViewLayout = listLayout
 
-        // swiftlint:disable line_length
-        let cellRegistration = UICollectionView.CellRegistration { (cell: UICollectionViewListCell, indexPath: IndexPath, _: String) in
-            let reminder = Reminder.sampleData[indexPath.item]
-            var contentConfiguration = cell.defaultContentConfiguration()
-            contentConfiguration.text = reminder.title
-            cell.contentConfiguration = contentConfiguration
-        }
+        let cellRegistration = UICollectionView.CellRegistration(handler: cellRegistrationHandler)
 
         // swiftlint:disable line_length
         dataSource = DataSource(collectionView: collectionView) { (collectionView: UICollectionView, indexPath: IndexPath, itemIdentifier: String) in
