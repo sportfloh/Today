@@ -33,4 +33,11 @@ extension ReminderTestCase {
         XCTAssertEqual(notes, reminder.notes)
         XCTAssertEqual(isComplete, reminder.isComplete)
     }
+
+    func testIndexOfReminder() {
+        let index = 2
+        let reminder = Reminder.sampleData[index]
+
+        XCTAssertEqual(index, Reminder.sampleData.indexOfReminder(with: reminder.id))
+    }
 }
