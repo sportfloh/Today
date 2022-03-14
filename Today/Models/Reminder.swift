@@ -9,7 +9,8 @@ import Foundation
 
 // MARK: -
 
-struct Reminder {
+struct Reminder: Identifiable {
+    var id = UUID().uuidString
     var title: String
     var dueDate: Date
     var notes: String?
