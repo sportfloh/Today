@@ -25,6 +25,7 @@
 		DFEFB9F027D666AD00D8CD4D /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEFB9EF27D666AD00D8CD4D /* Date+Today.swift */; };
 		DFEFB9F227D6690B00D8CD4D /* Date+TodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEFB9F127D6690B00D8CD4D /* Date+TodayTests.swift */; };
 		DFF1E88927E8AA4D0072647E /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1E88827E8AA4D0072647E /* ReminderViewController.swift */; };
+		DFF1E88D27E8AE8C0072647E /* ReminderViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1E88C27E8AE8C0072647E /* ReminderViewController+Row.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		DFEFB9EF27D666AD00D8CD4D /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
 		DFEFB9F127D6690B00D8CD4D /* Date+TodayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+TodayTests.swift"; sourceTree = "<group>"; };
 		DFF1E88827E8AA4D0072647E /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		DFF1E88C27E8AE8C0072647E /* ReminderViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Row.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				DFF1E88827E8AA4D0072647E /* ReminderViewController.swift */,
+				DFF1E88C27E8AE8C0072647E /* ReminderViewController+Row.swift */,
 			);
 			path = ReminderViewController;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				DFF1E88927E8AA4D0072647E /* ReminderViewController.swift in Sources */,
 				DF56CD8D27B7991B00066242 /* ReminderListViewController.swift in Sources */,
 				DFEFB9F027D666AD00D8CD4D /* Date+Today.swift in Sources */,
+				DFF1E88D27E8AE8C0072647E /* ReminderViewController+Row.swift in Sources */,
 				DFC8E08027DFCAA80020C906 /* ReminderDoneButton.swift in Sources */,
 				DF56CD8927B7991B00066242 /* AppDelegate.swift in Sources */,
 				DF56CD8B27B7991B00066242 /* SceneDelegate.swift in Sources */,
