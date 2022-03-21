@@ -169,13 +169,29 @@
 		DF56CDBE27B7A4A400066242 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DFF1E88B27E8AE370072647E /* ListViewController */,
+				DFF1E88A27E8AE120072647E /* ReminderViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DFF1E88A27E8AE120072647E /* ReminderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DFF1E88827E8AA4D0072647E /* ReminderViewController.swift */,
+			);
+			path = ReminderViewController;
+			sourceTree = "<group>";
+		};
+		DFF1E88B27E8AE370072647E /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
 				DF56CD8C27B7991B00066242 /* ReminderListViewController.swift */,
 				DFC8E07B27DE5BD40020C906 /* ReminderListViewController+DataSource.swift */,
 				DFC8E08127DFCD150020C906 /* ReminderListViewController+Actions.swift */,
 				DFC8E07F27DFCAA80020C906 /* ReminderDoneButton.swift */,
-				DFF1E88827E8AA4D0072647E /* ReminderViewController.swift */,
 			);
-			path = Controllers;
+			path = ListViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
