@@ -63,7 +63,7 @@ class ReminderViewController: UICollectionViewController {
             .viewTitle,
             .viewDate,
             .viewTitle,
-            .viewNotes,
+            .viewNotes
         ],
         toSection: 0)
         dataSource.apply(snapshot)
