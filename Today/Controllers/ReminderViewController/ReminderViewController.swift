@@ -62,7 +62,7 @@ class ReminderViewController: UICollectionViewController {
         snapshot.appendItems([
             .viewTitle,
             .viewDate,
-            .viewTitle,
+            .viewTime,
             .viewNotes
         ],
         toSection: 0)
