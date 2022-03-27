@@ -5,7 +5,6 @@
 //  Created by Florian Bruder on 27.03.22.
 //
 
-import Foundation
 import UIKit
 
 // MARK: -
@@ -21,6 +20,15 @@ extension ReminderViewController {
 
     func headerConfiguration(for cell: UICollectionViewListCell, with title: String) -> UIListContentConfiguration {
         var contentConfiguration = cell.defaultContentConfiguration()
+        contentConfiguration.text = title
+        return contentConfiguration
+    }
+
+    func titleConfiguration(
+        for cell: UICollectionViewListCell,
+        with title: String?) -> TextFieldContentView.Configuration
+    {
+        var contentConfiguration = cell.textFieldConfiguration()
         contentConfiguration.text = title
         return contentConfiguration
     }
