@@ -52,7 +52,7 @@ class TextViewContentView: UIView, UIContentView {
 
 // MARK: -
 
-extension TextViewContentView {
+extension UICollectionViewListCell {
     func textViewConfiguration() -> TextViewContentView.Configuration {
         TextViewContentView.Configuration()
     }

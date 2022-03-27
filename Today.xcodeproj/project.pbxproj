@@ -32,6 +32,7 @@
 		DFF1E89727F0E7D20072647E /* TextFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1E89627F0E7D20072647E /* TextFieldContentView.swift */; };
 		DFF1E89927F0EB950072647E /* UIContentConfiguration+Stateless.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1E89827F0EB950072647E /* UIContentConfiguration+Stateless.swift */; };
 		DFF1E89B27F0FC940072647E /* TextViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1E89A27F0FC940072647E /* TextViewContentView.swift */; };
+		DFF1E89D27F103D10072647E /* DatePickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1E89C27F103D10072647E /* DatePickerContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		DFF1E89627F0E7D20072647E /* TextFieldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldContentView.swift; sourceTree = "<group>"; };
 		DFF1E89827F0EB950072647E /* UIContentConfiguration+Stateless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIContentConfiguration+Stateless.swift"; sourceTree = "<group>"; };
 		DFF1E89A27F0FC940072647E /* TextViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewContentView.swift; sourceTree = "<group>"; };
+		DFF1E89C27F103D10072647E /* DatePickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 				DFF1E89627F0E7D20072647E /* TextFieldContentView.swift */,
 				DFF1E89827F0EB950072647E /* UIContentConfiguration+Stateless.swift */,
 				DFF1E89A27F0FC940072647E /* TextViewContentView.swift */,
+				DFF1E89C27F103D10072647E /* DatePickerContentView.swift */,
 			);
 			path = ContentViews;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 			files = (
 				DFF1E89527F0DA760072647E /* UIView+PinnedSubview.swift in Sources */,
 				DFF1E88F27F090540072647E /* ReminderViewController+Section.swift in Sources */,
+				DFF1E89D27F103D10072647E /* DatePickerContentView.swift in Sources */,
 				DFC8E07E27DE63100020C906 /* UIColor+Today.swift in Sources */,
 				DFC8E08227DFCD150020C906 /* ReminderListViewController+Actions.swift in Sources */,
 				DFF1E88927E8AA4D0072647E /* ReminderViewController.swift in Sources */,
