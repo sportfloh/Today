@@ -27,6 +27,7 @@
 		DFF1E88927E8AA4D0072647E /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1E88827E8AA4D0072647E /* ReminderViewController.swift */; };
 		DFF1E88D27E8AE8C0072647E /* ReminderViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1E88C27E8AE8C0072647E /* ReminderViewController+Row.swift */; };
 		DFF1E88F27F090540072647E /* ReminderViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1E88E27F090540072647E /* ReminderViewController+Section.swift */; };
+		DFF1E89127F0D4BD0072647E /* ReminderViewController+CellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1E89027F0D4BD0072647E /* ReminderViewController+CellConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		DFF1E88827E8AA4D0072647E /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		DFF1E88C27E8AE8C0072647E /* ReminderViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Row.swift"; sourceTree = "<group>"; };
 		DFF1E88E27F090540072647E /* ReminderViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Section.swift"; sourceTree = "<group>"; };
+		DFF1E89027F0D4BD0072647E /* ReminderViewController+CellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+CellConfiguration.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				DFF1E88827E8AA4D0072647E /* ReminderViewController.swift */,
 				DFF1E88C27E8AE8C0072647E /* ReminderViewController+Row.swift */,
 				DFF1E88E27F090540072647E /* ReminderViewController+Section.swift */,
+				DFF1E89027F0D4BD0072647E /* ReminderViewController+CellConfiguration.swift */,
 			);
 			path = ReminderViewController;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				DFF1E88D27E8AE8C0072647E /* ReminderViewController+Row.swift in Sources */,
 				DFC8E08027DFCAA80020C906 /* ReminderDoneButton.swift in Sources */,
 				DF56CD8927B7991B00066242 /* AppDelegate.swift in Sources */,
+				DFF1E89127F0D4BD0072647E /* ReminderViewController+CellConfiguration.swift in Sources */,
 				DF56CD8B27B7991B00066242 /* SceneDelegate.swift in Sources */,
 				DF56CDB927B79BC300066242 /* Reminder.swift in Sources */,
 				DFC8E07C27DE5BD40020C906 /* ReminderListViewController+DataSource.swift in Sources */,
