@@ -26,6 +26,7 @@
 		DFEFB9F227D6690B00D8CD4D /* Date+TodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEFB9F127D6690B00D8CD4D /* Date+TodayTests.swift */; };
 		DFF1E88927E8AA4D0072647E /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1E88827E8AA4D0072647E /* ReminderViewController.swift */; };
 		DFF1E88D27E8AE8C0072647E /* ReminderViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1E88C27E8AE8C0072647E /* ReminderViewController+Row.swift */; };
+		DFF1E88F27F090540072647E /* ReminderViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1E88E27F090540072647E /* ReminderViewController+Section.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		DFEFB9F127D6690B00D8CD4D /* Date+TodayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+TodayTests.swift"; sourceTree = "<group>"; };
 		DFF1E88827E8AA4D0072647E /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		DFF1E88C27E8AE8C0072647E /* ReminderViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Row.swift"; sourceTree = "<group>"; };
+		DFF1E88E27F090540072647E /* ReminderViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Section.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			children = (
 				DFF1E88827E8AA4D0072647E /* ReminderViewController.swift */,
 				DFF1E88C27E8AE8C0072647E /* ReminderViewController+Row.swift */,
+				DFF1E88E27F090540072647E /* ReminderViewController+Section.swift */,
 			);
 			path = ReminderViewController;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFF1E88F27F090540072647E /* ReminderViewController+Section.swift in Sources */,
 				DFC8E07E27DE63100020C906 /* UIColor+Today.swift in Sources */,
 				DFC8E08227DFCD150020C906 /* ReminderListViewController+Actions.swift in Sources */,
 				DFF1E88927E8AA4D0072647E /* ReminderViewController.swift in Sources */,
