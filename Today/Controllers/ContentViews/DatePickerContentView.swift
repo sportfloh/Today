@@ -5,6 +5,54 @@
 //  Created by Florian Bruder on 27.03.22.
 //
 
-import Foundation
+import UIKit
 
 // MARK: -
+
+class DatePickerContentView: UIView, UIContentView {
+    struct Configuration: UIContentConfiguration {
+        var date = Date.now
+
+        func makeContentView() -> UIView & UIContentView {
+            DatePickerContentView(self)
+        }
+    }
+
+    let datePicker = UIDatePicker()
+    var configuration: UIContentConfiguration {
+        didSet {
+            configure(configuration: configuration)
+        }
+    }
+
+    override var intrinsicContentSize: CGSize {
+        CGSize(width: 0, height: 44)
+    }
+
+    init(_ configuration: UIContentConfiguration) {
+        self.configuration = configuration
+        super.init(frame: .zero)
+        addPinnedSubview(datePicker)
+        datePicker.preferredDatePickerStyle = .inline
+    }
+
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    func configure(configuration: UIContentConfiguration) {
+        guard let configuration = configuration as? Configuration else {
+            return
+        }
+        datePicker.date = configuration.date
+    }
+}
+
+// MARK: -
+
+extension UICollectionViewListCell {
+    func datePickerConfiguration() -> DatePickerContentView.Configuration {
+        DatePickerContentView.Configuration()
+    }
+}
