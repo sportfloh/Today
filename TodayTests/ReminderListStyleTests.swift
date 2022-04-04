@@ -10,4 +10,42 @@ import XCTest
 
 // MARK: -
 
-final class ReminderListStyleTestCase: XCTestCase {}
+final class ReminderListStyleTestCase: XCTestCase {
+    func testShouldIncludeTodayToday() {
+        let reminderListStyle = ReminderListStyle.today
+        XCTAssert(reminderListStyle.shouldInclude(date: Date.now))
+        XCTAssertFalse(reminderListStyle.shouldInclude(date: Calendar.current.date(
+            byAdding: .day,
+            value: -1,
+            to: Date.now)!))
+        XCTAssertFalse(reminderListStyle.shouldInclude(date: Calendar.current.date(
+            byAdding: .day,
+            value: 1,
+            to: Date.now)!))
+    }
+
+    func testShouldIncludeTodayFuture() {
+        let reminderListStyle = ReminderListStyle.future
+        XCTAssert(
+            reminderListStyle.shouldInclude(date: Calendar.current.date(
+                byAdding: .day,
+                value: 1,
+                to: Date.now)!))
+        XCTAssertFalse(reminderListStyle.shouldInclude(date: Date.now))
+    }
+
+    func testShouldIncludeTodayAll() {
+        let reminderListStyle = ReminderListStyle.all
+        XCTAssert(reminderListStyle.shouldInclude(date: Date.now))
+        XCTAssert(reminderListStyle.shouldInclude(
+            date: Calendar.current.date(
+                byAdding: .day,
+                value: -1,
+                to: Date.now)!))
+        XCTAssert(reminderListStyle.shouldInclude(
+            date: Calendar.current.date(
+                byAdding: .day,
+                value: 1,
+                to: Date.now)!))
+    }
+}
