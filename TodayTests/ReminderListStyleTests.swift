@@ -48,4 +48,13 @@ final class ReminderListStyleTestCase: XCTestCase {
                 value: 1,
                 to: Date.now)!))
     }
+
+    func testNameProperty() {
+        var reminderListStyle = ReminderListStyle.today
+        XCTAssertEqual(reminderListStyle.name, "Today")
+        reminderListStyle = .future
+        XCTAssertEqual(reminderListStyle.name, "Future")
+        reminderListStyle = .all
+        XCTAssertEqual(reminderListStyle.name, "All")
+    }
 }
