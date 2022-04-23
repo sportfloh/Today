@@ -18,6 +18,8 @@ class ReminderListViewController: UICollectionViewController {
             .sorted { $0.dueDate < $1.dueDate }
     }
 
+    var headerView: ProgressHeaderView?
+
     var listStyle: ReminderListStyle = .today
     let listStyleSegmentedControl = UISegmentedControl(items: [
         ReminderListStyle.today.name,
@@ -27,6 +29,8 @@ class ReminderListViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        collectionView.backgroundColor = .todayGradientFutureBegin
 
         let listLayout = listLayout()
         collectionView.collectionViewLayout = listLayout
@@ -39,6 +43,11 @@ class ReminderListViewController: UICollectionViewController {
                 using: cellRegistration,
                 for: indexPath,
                 item: itemIdentifier)
+        }
+
+        let headerRegistration = UICollectionView.SupplementaryRegistration(elementKind: ProgressHeaderView.elementKind, handler: supplementaryRegistrationHandler)
+        dataSource.supplementaryViewProvider = { _, _, indexPath in
+            self.collectionView.dequeueConfiguredReusableSupplementary(using: headerRegistration, for: indexPath)
         }
 
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didPressAddButton(_:)))
@@ -71,6 +80,7 @@ class ReminderListViewController: UICollectionViewController {
 
     private func listLayout() -> UICollectionViewCompositionalLayout {
         var listConfiguration = UICollectionLayoutListConfiguration(appearance: .grouped)
+        listConfiguration.headerMode = .supplementary
         listConfiguration.showsSeparators = false
         listConfiguration.trailingSwipeActionsConfigurationProvider = makeSwipeActions
         listConfiguration.backgroundColor = .clear
@@ -88,5 +98,9 @@ class ReminderListViewController: UICollectionViewController {
             completion(false)
         }
         return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
+
+    private func supplementaryRegistrationHandler(progressView: ProgressHeaderView, elementKind: String, indexPath: IndexPath) {
+        headerView = progressView
     }
 }
