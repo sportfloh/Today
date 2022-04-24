@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DF17AA9528132A8F0028B270 /* ProgressHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF17AA9428132A8F0028B270 /* ProgressHeaderView.swift */; };
+		DF17AA97281522DD0028B270 /* CAGradientLayer+ListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF17AA96281522DD0028B270 /* CAGradientLayer+ListStyle.swift */; };
 		DF486A5727FA0D7900AA0F76 /* ReminderListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF486A5627FA0D7900AA0F76 /* ReminderListStyle.swift */; };
 		DF486A5927FA0F0700AA0F76 /* ReminderListStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF486A5827FA0F0700AA0F76 /* ReminderListStyleTests.swift */; };
 		DF56CD8927B7991B00066242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56CD8827B7991B00066242 /* AppDelegate.swift */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		DF17AA9428132A8F0028B270 /* ProgressHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHeaderView.swift; sourceTree = "<group>"; };
+		DF17AA96281522DD0028B270 /* CAGradientLayer+ListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+ListStyle.swift"; sourceTree = "<group>"; };
 		DF486A5627FA0D7900AA0F76 /* ReminderListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListStyle.swift; sourceTree = "<group>"; };
 		DF486A5827FA0F0700AA0F76 /* ReminderListStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListStyleTests.swift; sourceTree = "<group>"; };
 		DF56CD8527B7991B00066242 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +179,7 @@
 				DFEFB9EF27D666AD00D8CD4D /* Date+Today.swift */,
 				DFC8E07D27DE63100020C906 /* UIColor+Today.swift */,
 				DF486A5627FA0D7900AA0F76 /* ReminderListStyle.swift */,
+				DF17AA96281522DD0028B270 /* CAGradientLayer+ListStyle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				DFF1E89127F0D4BD0072647E /* ReminderViewController+CellConfiguration.swift in Sources */,
 				DF56CD8B27B7991B00066242 /* SceneDelegate.swift in Sources */,
 				DF56CDB927B79BC300066242 /* Reminder.swift in Sources */,
+				DF17AA97281522DD0028B270 /* CAGradientLayer+ListStyle.swift in Sources */,
 				DFC8E07C27DE5BD40020C906 /* ReminderListViewController+DataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
