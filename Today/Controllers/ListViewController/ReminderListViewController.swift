@@ -11,7 +11,7 @@ import UIKit
 
 class ReminderListViewController: UICollectionViewController {
     var dataSource: DataSource!
-    var reminders = Reminder.sampleData
+    var reminders: [Reminder] = []
     var filteredReminders: [Reminder] {
         reminders
             .filter { listStyle.shouldInclude(date: $0.dueDate) }
@@ -68,6 +68,8 @@ class ReminderListViewController: UICollectionViewController {
         updateSnapShot()
 
         collectionView.dataSource = dataSource
+
+        prepareReminderStore()
     }
 
     override func viewWillAppear(_ animated: Bool) {
