@@ -128,6 +128,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF17AAA428201ACE0028B270 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF56CD9127B7991C00066242 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DF56CD7C27B7991B00066242 = {
 			isa = PBXGroup;
 			children = (
@@ -153,8 +161,8 @@
 			children = (
 				DF56CD8827B7991B00066242 /* AppDelegate.swift */,
 				DF56CD8A27B7991B00066242 /* SceneDelegate.swift */,
-				DF56CD9127B7991C00066242 /* Assets.xcassets */,
 				DF56CD9627B7991C00066242 /* Info.plist */,
+				DF17AAA428201ACE0028B270 /* Resources */,
 				DF56CDBC27B7A42A00066242 /* Models */,
 				DF56CDBD27B7A46900066242 /* Storyboards */,
 				DF56CDBE27B7A4A400066242 /* Controllers */,
